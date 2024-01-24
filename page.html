@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character set and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the document -->
+    <title>Responsive Website Layout</title>
+</head>
+<style>
+    /* Container 1 Styles */
+    .con1 {
+        display: flex;
+        background-color: yellow;
+        padding: 5px;
+        font-size: 10px;
+        justify-content: center;
+        border-radius: 15px 1px 1px 1px;
+    }
+
+    /* Container 2 Styles */
+    .con2 {
+        background-color: rgb(45, 223, 223);
+        padding: 30px;
+        text-align: center;
+        color: #fffdfd;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Text Styles */
+    .txt {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /* Navigation Links Styles */
+    .lien > a {
+        text-decoration: none;
+        color: #fffdfd;
+        margin-right: 30px;
+    }
+
+    .lien {
+        background-color: black;
+        padding: 10px;
+        color: #ffffff;
+    }
+
+    /* General Container Styles */
+    .gencon {
+        display: flex;
+    }
+
+    /* Container 3 Styles */
+    .con3 {
+        background-color: rgb(233, 227, 227);
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 500px;
+    }
+
+    /* Images Container Styles */
+    .img > p {
+        background-color: gray;
+        padding: 15px;
+    }
+
+    /* Container 4 Styles */
+    .con4 {
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /* Second Image Container Styles */
+    .img2 {
+        background-color: gray;
+        padding: 20px;
+        height: 150px;
+    }
+
+    /* Footer Styles */
+    .feild {
+        background-color: #9e9999;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    /* Media Query for Small Screens */
+    @media (max-width: 700px) {
+        .lien > a {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .gencon {
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <!-- Container 1: Responsive Message -->
+    <div class="con1">
+        <h2>Resize the browser window to see the responsive effect</h2>
+    </div>
+
+    <!-- Container 2: Header -->
+    <div class="con2">
+        <h1>My Website</h1>
+        <p>with a <span class="txt">flexible</span> layout</p>
+    </div>
+
+    <!-- Navigation Links Container -->
+    <div class="lien">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <!-- General Container -->
+    <div class="gencon">
+        <!-- Container 3: About Me -->
+        <div class="con3">
+            <h2>About Me</h2>
+            <p>Photo of me:</p>
+            <div class="img2" id="photo">
+                <p>[Image]</p> <!-- Placeholder for an actual image -->
+            </div>
+            <p>A text about me</p>
+            <b><p>More text</p></b>
+            <p>For me, it's...</p>
+            <div class="img">
+                <p>[Image]</p>
+                <p>[Image]</p>
+                <p>[Image]</p>
+            </div>
+        </div>
+
+        <!-- Container 4: Content -->
+        <div class="con4">
+            <h2>Title 1</h2>
+            <p>Description of the title, Dec 7, 2023</p>
+            <div class="img2">
+                <p>[Image]</p> <!-- Placeholder for an actual image -->
+            </div>
+            <p>A bit of text</p>
+            <p>Web pages can be viewed using many types of devices: desktop computers, tablets, and phones.</p>
+            <h2>Title 2</h2>
+            <b><p>Description of the title, Sept 2, 2023</p></b>
+            <div class="img2">
+                <p>[Image]</p> <!-- Placeholder for an actual image -->
+            </div>
+            <p>A bit more text...</p>
+            <p>Web pages should not omit information to fit on smaller devices but rather adapt their content to display correctly on any device used.</p>
+        </div>
+    </div>
+
+    <!-- Footer Container -->
+    <div class="feild">
+        <b><p>Footer</p></b>
+    </div>
+</body>
+</html>
